@@ -3,7 +3,7 @@
 #Constants
 DOCKER_LOGIN=`aws ecr get-login --region us-west-2`
 REGION=us-west-2
-REPOSITORY_NAME=league-bot
+REPOSITORY_NAME=wow-bot
 CLUSTER=discord-bots
 ENVIRONMENT=dev
 FAMILY=${REPOSITORY_NAME}-${ENVIRONMENT}
