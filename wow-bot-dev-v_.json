@@ -1,0 +1,27 @@
+{
+    "family": "wow-bot-dev",
+    "containerDefinitions": [
+        {
+            "image": "928610031571.dkr.ecr.us-west-2.amazonaws.com/wow-bot:development-v_",
+            "name": "wow-bot-dev",
+            "cpu": 10,
+            "memory": 100,
+            "essential": true,
+            "portMappings": [],
+            "environment": [
+                {
+                    "name": "WOW_BOT_TOKEN",
+                    "value": ""
+                },
+                {
+                    "name": "WOW_API_TOKEN",
+                    "value": ""
+                },
+                {
+                    "name": "WARCRAFT_LOGS_API_TOKEN",
+                    "value": ""
+                }
+            ]
+        }
+    ]
+}
