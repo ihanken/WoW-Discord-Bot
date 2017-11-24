@@ -2,7 +2,7 @@
     "family": "%NAME%",
     "containerDefinitions": [
         {
-            "image": "%REPOSITORY_URI%:development-v_%BUILD_NUMBER%",
+            "image": "%REPOSITORY_URI%:%ENVIRONMENT%-v_%BUILD_NUMBER%",
             "name": "%NAME%",
             "cpu": 10,
             "memory": 100,
