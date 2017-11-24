@@ -1,9 +1,9 @@
 {
-    "family": "%NAME%",
+    "family": "wow-bot-dev",
     "containerDefinitions": [
         {
-            "image": "%REPOSITORY_URI%:%ENVIRONMENT%-v_%BUILD_NUMBER%",
-            "name": "%NAME%",
+            "image": "928610031571.dkr.ecr.us-west-2.amazonaws.com/wow-bot:development-v_",
+            "name": "wow-bot-dev",
             "cpu": 10,
             "memory": 100,
             "essential": true,
@@ -11,15 +11,15 @@
             "environment": [
                 {
                     "name": "WOW_BOT_TOKEN",
-                    "value": "%WOW_BOT_TOKEN%"
+                    "value": ""
                 },
                 {
                     "name": "WOW_API_TOKEN",
-                    "value": "%WOW_API_TOKEN%"
+                    "value": ""
                 },
                 {
                     "name": "WARCRAFT_LOGS_API_TOKEN",
-                    "value": "%WARCRAFT_LOGS_API_TOKEN%"
+                    "value": ""
                 }
             ]
         }

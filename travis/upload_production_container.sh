@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #Constants
-DOCKER_LOGIN=`aws ecr get-login --region us-west-2`
+DOCKER_LOGIN=`aws ecr get-login --region us-west-2 --no-include-email`
 REGION=us-west-2
-REPOSITORY_NAME=league-bot
+REPOSITORY_NAME=wow-bot
 CLUSTER=discord-bots
 ENVIRONMENT=prod
 FAMILY=${REPOSITORY_NAME}-${ENVIRONMENT}
