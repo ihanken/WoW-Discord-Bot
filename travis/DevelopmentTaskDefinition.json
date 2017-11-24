@@ -1,0 +1,27 @@
+{
+    "family": "%NAME%",
+    "containerDefinitions": [
+        {
+            "image": "%REPOSITORY_URI%:development-v_%BUILD_NUMBER%",
+            "name": "%NAME%",
+            "cpu": 10,
+            "memory": 100,
+            "essential": true,
+            "portMappings": [],
+            "environment": [
+                {
+                    "name": "WOW_BOT_TOKEN",
+                    "value": "%WOW_BOT_TOKEN%"
+                },
+                {
+                    "name": "WOW_API_TOKEN",
+                    "value": "%WOW_API_TOKEN%"
+                },
+                {
+                    "name": "WARCRAFT_LOGS_API_TOKEN",
+                    "value": "%WARCRAFT_LOGS_API_TOKEN%"
+                }
+            ]
+        }
+    ]
+}
